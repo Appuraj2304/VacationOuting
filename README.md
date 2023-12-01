@@ -133,12 +133,13 @@ c.	Commit your changes: git commit -m 'Update README.md'.
 d.	Push to the branch: git push origin main/README.md.
 e.	Submit a pull request.
 
-2.	Record Video and Voice Over (mohaneaj0349@gmail.com):
+2.	Create a Azure AI service,Record Video and Voice Over (mohaneaj0349@gmail.com):
 -	The Third team member is responsible for Recording video & Voice Over for the video.
 -	To contribute, follow these steps:
-a.	Fork the project.
-b. Recording video when deploying project on Azure.
-c. Give Voice over for the recorded Video.
+a.   Create a AI service on azure
+b.	Fork the project.
+c.   Recording video when deploying project on Azure.
+d.  Give Voice over for the recorded Video.
 
 10. License
 •	This project is licensed under the MIT License.
