@@ -147,7 +147,8 @@ f92804cec)
 ![Screenshot (260)](https://github.com/Appuraj2304/VacationOuting/assets/145565904/41b36e09-462c-4939-b73f-70cd5817c5ea)
 
 
-8.Demo Video
+8.Demo Video:
+https://youtu.be/LFnXV0WLyUc?si=6qoB0p6PDUODM4P4
 
 9.Project URL:
 https://vacationouting1.azurewebsites.net/
