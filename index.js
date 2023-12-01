@@ -1,42 +1,21 @@
 const express = require("express");
-const multer = require("multer");
-const path = require("path");
 const bodyParser = require("body-parser");
-const mysql = require("mysql2");
+const path = require("path");
+const { Sequelize, DataTypes } = require("sequelize");
+const sqlite3 = require("sqlite3").verbose();
+const db = new sqlite3.Database("database.sqlite");
 
 const app = express();
-const port = 5000;
-
-// Connect to MySQL database
-const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "Appuraj@2304",
-  database: "vacationouting",
-});
-
-// Check MySQL connection
-db.connect((err) => {
-  if (err) {
-    console.error("Error connecting to MySQL:", err);
-    return;
-  }
-  console.log("Connected to MySQL");
-});
-
-// Middleware
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-
-// Serve static files from the "public" directory
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
+
+const port = 3002;
 
 // Home page
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
-
-// ... (Other routes remain the same)
 
 // Booking Form page
 app.get("/bookingform", (req, res) => {
@@ -132,13 +111,9 @@ app.get("/faq", (req, res) => {
 });
 
 app.get("/chatbot", (req, res) => {
-  res.sendFile(
-    path.join(__dirname, "public", "/chatbot/chatbot.html")
-  );
+  res.sendFile(path.join(__dirname, "public", "/chatbot/chatbot.html"));
 });
 
-// ... (Other routes remain the same)
-
 app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
+  console.log("Node app is running at localhost:" + port);
 });
