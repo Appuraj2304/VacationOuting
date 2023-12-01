@@ -80,8 +80,8 @@ The Vacation Outing project is an online platform designed to provide users with
 
 Vacation-Outing-project/
 │
-├── public/              # Frontend HTML, CSS, JS files
-├── server/              # Node.js server files
+-├── public/              # Frontend HTML, CSS, JS files
+-├── server/              # Node.js server files
 │   ├── app.json       # Backend server logic
 │   ├── db.sqlite      # SQLite database file
 │   └── ...                  # Other backend files
@@ -125,7 +125,7 @@ This project is a collaborative effort, and each team member has a specific role
 -	I am responsible for coding and implementing new features.
 -	To contribute, follow these steps:
 a.	Fork the project.
-b.	Create your feature branch: git checkout -b https://github.com/Appuraj2304/Project_Team_6
+b.	Create your feature branch: git checkout -b (https://github.com/Appuraj2304/VacationOuting)
 c.	Commit your changes: git commit -m 'Add some feature'.
 d.	Push to the branch: git push origin feature/your-feature.
 e.	Submit a pull request.
@@ -136,7 +136,7 @@ g.	Ensure that the deployment is seamless and aligns with the project requiremen
 -	The Second team member is responsible for creating and updating the README file, including demo screenshots, demo video.
 -	To contribute, follow these steps:
 a.	Fork the project.
-b.	Create your documentation branch: git checkout -b (https://github.com/Appuraj2304/Project_Team_6/main/README.md).
+b.	Create your documentation branch: git checkout -b https://github.com/Appuraj2304/VacationOuting/main/README.md.
 c.	Commit your changes: git commit -m 'Update README.md'.
 d.	Push to the branch: git push origin main/README.md.
 e.	Submit a pull request.
