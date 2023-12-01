@@ -38,19 +38,16 @@ body {
 </style
 <body>
 
-  <!-- Your webpage content goes here -->
+
 <iframe src='https://webchat.botframework.com/embed/vacationoutingAI-bot?s=2M-G5s64RtQ.JxZOYcgTunPXPTX1SRbRTvFOG3KJGM5tqtpmUsbx1-M'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
   <div id="chatbot-container">
-      <button> Chatbot</button>
+      <button onclick=" submitForm()"> Chatbot</button>
   </div>
 
   <script>
-    document.getElementById('open-chatbot').addEventListener('click', openChatbot);
-
-function openChatbot() {
-    // Your code to open the chatbot goes here
-    console.log('Chatbot opened!');
-}
+function submitForm() {
+            alert("In case when you are conversation with chatbot it couldn't respond means that $100 empty!.Sorry for that inconvenience");
+        }
     </script>
 </body>
 </html>
