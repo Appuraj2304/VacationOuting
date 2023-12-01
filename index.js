@@ -131,6 +131,12 @@ app.get("/faq", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "/footer/faq.html"));
 });
 
+app.get("/chatbot", (req, res) => {
+  res.sendFile(
+    path.join(__dirname, "public", "/chatbot/chatbot.html")
+  );
+});
+
 // ... (Other routes remain the same)
 
 app.listen(port, () => {
