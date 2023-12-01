@@ -114,6 +114,6 @@ app.get("/chatbot", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "/chatbot/chatbot.html"));
 });
 
-app.listen(port, () => {
-  console.log("Node app is running at localhost:" + port);
-});
+app.listen(app.get('port'), function() {
+  console.log("Node app is running at localhost:" + app.get('port'))
+})
