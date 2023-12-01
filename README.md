@@ -38,12 +38,12 @@ The Vacation Outing project is an online platform designed to provide users with
 - To ensure transparency and address user concerns, the project includes dedicated sections for privacy policies and frequently asked questions (FAQs). These sections provide users with clear information about data handling practices and common inquiries.
 
 3.Installation
-1.	Clone the repository: bash git clone https://github.com/[your-username]/[your-repo].git cd Vaction outing
+1.	Clone the repository: bash git clone https://github.com/Appuraj2304.git cd Vaction outing
 2.	Install dependencies: bash npm install
 3.	Start the Node.js server: node server/index.js
 4.	Set up the database: bash create the SQLite database touch usersdb
 5.	Start the application: bash npm start
-6.	Open your web browser and go to http://localhost:3002 to view the application.
+6.	Open your web browser and go to http://localhost:5000 to view the application.
    
 4.Technologies Used
 
@@ -67,8 +67,6 @@ The Vacation Outing project is an online platform designed to provide users with
 ->Deployment:  
 
 •       Azure App Service
-
-•	   Azure Blob Storage 
 
 •	   Azure Virtual Network (VNet)
 
@@ -101,13 +99,6 @@ Vacation-Outing-project/
            NODE_ENV (e.g., production)
 
    
-->Azure Blob Storage:
-1.	Create an Azure Storage account.
-2.	Create a Blob Container to store static assets (e.g., images)
-3.	Update your application to use the Azure Blob Storage URL for serving static assets.
-
-
-   
 ->Azure Virtual Network (VNet):
 1.	Set up a Virtual Network in the Azure Portal.
 2.	Integrate your Azure App Service and Azure Blob Storage with the Virtual Network for enhanced security.
@@ -117,7 +108,8 @@ Vacation-Outing-project/
 
 8.Demo Video
 
-9.Project URL
+9.Project URL:
+https://vacationouting1.azurewebsites.net/
 
 10.Contributing
 This project is a collaborative effort, and each team member has a specific role:
