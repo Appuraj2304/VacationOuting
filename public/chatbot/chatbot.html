@@ -35,6 +35,29 @@ body {
 #open-chatbot:hover {
     background-color: #45a049;
 }
+
+ body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .scrolling-text {
+      position: absolute;
+      top: 0;
+      white-space: nowrap;
+      animation: scrollText 20s linear infinite;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 23px;
+    }
+
+    @keyframes scrollText {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
 </style
 <body>
 
@@ -43,10 +66,12 @@ body {
   <div id="chatbot-container">
       <button onclick=" submitForm()"> Chatbot</button>
   </div>
-
+  <div class="scrolling-text">
+    <p>"In case it couldn't respond  when you are conversation with chatbot that Means $100 is empty!.Sorry for that inconvenience".</p>
+  </div>
   <script>
 function submitForm() {
-            alert("In case when you are conversation with chatbot it couldn't respond means that $100 empty!.Sorry for that inconvenience");
+            alert("In case it couldn't respond  when you are conversation with chatbot that Means $100 is empty!.Sorry for that inconvenience");
         }
     </script>
 </body>
